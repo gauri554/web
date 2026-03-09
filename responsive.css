@@ -1,0 +1,11 @@
+@media(max-width:991px){
+.experience{
+position:absolute;
+top:20px;
+left:220px;
+display:flex;
+align-items:center;
+gap:10px;
+z-index:4;
+}
+}
