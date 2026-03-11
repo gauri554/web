@@ -79,8 +79,13 @@ border: 1px solid var(--text-color);
 border:none;
 box-shadow:0 4px 12px rgba(0,0,0,0.1);
 border-radius:10px;
+transition: all 0.3s ease-in-out;
 }
 
+.product-card:hover{
+ transform:translateY(-8px);
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
 .product-card img{
 height:180px;
 object-fit:contain;
@@ -217,24 +222,25 @@ color:#ff9f1c !important;
 .contact-glass{
     background:linear-gradient(
 90deg,
-rgba(255,150,50,0.35),
-rgba(255,255,255,0.08),
-rgba(180,200,220,0.35)
+rgba(83, 81, 78, 0.35),
+rgba(255, 164, 164, 0.08),
+rgba(202, 228, 255, 0.35)
 );
 
 backdrop-filter:blur(14px);
 border:1px solid rgba(255,255,255,0.25);
+border-radius: 15px !important;
 }
 
 .contact-glass .form-control{
-    background: transparent !important;
     color:#ddd !important;
 }
 .form-control::placeholder{
     color: #ddd;
 }
-input{
+.contact-form input{
     color:#ddd;
+    background-color:rgba(202, 228, 255, 0.35) !important;
 }
 .note{
     font-size: 12px;
@@ -255,6 +261,9 @@ input[type="file"]::file-selector-button{
   background-color: white !important;
   color: black !important;
   box-shadow: none !important;
+}
+.accordion-button{
+    font-weight: 600;
 }
 
 .accordion-button:focus {
@@ -1056,19 +1065,20 @@ font-size:28px;
 margin-bottom:25px;
 }
 
-.form-control{
+.contact-form{
 height:48px;
 border-radius:10px;
 border:1px solid #ebebeb !important;
 padding-left:15px;
 }
 
-textarea.form-control{
+textarea.contact-form{
 height:auto;
 padding-top:12px;
+border:1px solid #ebebeb !important;
 }
 
-.form-control::placeholder{
+.contact-form::placeholder{
     color: #81848a;
 }
 

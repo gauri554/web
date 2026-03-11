@@ -19,7 +19,7 @@
 What Our <span class="textstyle">Clients</span> Say
 </h2>
 
-<div id="carouselExampleIndicators" class="carousel slide">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="false">
 
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
@@ -81,5 +81,15 @@ What Our <span class="textstyle">Clients</span> Say
 </div>
 
 </section>
+
+<script src="/script.js"></script>
+<script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="/bootstrap/aos/aos.js"></script>
+<script>
+  AOS.init({
+duration: 1000,
+once: true
+});
+</script>
 </body>
 </html>

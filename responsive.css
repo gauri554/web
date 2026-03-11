@@ -17,4 +17,9 @@ z-index:4;
 .circle-badge{
     left: 20px;
 }
+.faqcontact-box{
+    position: absolute;
+      left: 20px !important;
+    font-size: 10px !important;
+}
 }
