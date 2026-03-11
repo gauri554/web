@@ -111,20 +111,26 @@ make a type specimen book.
 <div class="mission-box">
 <div class="row g-0 mission-tabs">
      
-<div class="col-md-4 tab active">
-<span>Our Mission</span>
+<div class="col-md-4 tab active" data-tab="mission">
+<span class="d-flex justify-content-center"> 
+  <i class="bi bi-bullseye"></i>
+    Our Mission</span>
 </div>
        
-<div class="col-md-4 tab">
-<span>Our Vision</span>
+<div class="col-md-4 tab" data-tab="vision">
+<span class="d-flex justify-content-center">
+ <i class="bi bi-ui-radios-grid"></i>
+    Our Vision</span>
 </div>
 
-<div class="col-md-4 tab">
-<span>Our Value</span>
+<div class="col-md-4 tab" data-tab="value">
+
+<span class="d-flex justify-content-center">  <i class="bi bi-gem"></i> Our Value</span>
 </div>
-    </ul>
+  
 </div>
 
+<div class="mission-tab-content active" id="mission">
 <div class="row align-items-center mission-content">
 <div class="col-lg-6">
 <p class="mission-text">
@@ -147,6 +153,45 @@ growth that benefits both business and the environment.
 </div>
 </div>
 </div>
+</div>
+
+<div class="mission-tab-content" id="vision">
+
+<div class="row align-items-center mission-content">
+<div class="col-lg-6">
+<p class="mission-text">
+Our vision is to become a global leader in innovative industrial
+solutions that empower industries while protecting the planet.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus earum a, pariatur accusantium eveniet deserunt! Sit dignissimos voluptas inventore eligendi odit impedit, excepturi unde dolores minus alias aperiam repudiandae eveniet aut! Iusto animi voluptas quidem placeat. Illum, facere corrupti cumque quisquam incidunt aperiam enim dicta! Aspernatur doloribus cupiditate necessitatibus obcaecati.
+</p>
+</div>
+<div class="col-lg-6">
+<img src="/assets/mission-image.jpg.png" class="img-fluid">
+</div>
+</div>
+</div>
+
+<div class="mission-tab-content" id="value">
+
+<div class="row align-items-center mission-content">
+<div class="col-lg-6">
+<p class="mission-text">
+Our core values are integrity, sustainability, innovation, and
+commitment to excellence in every solution we provide.
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis doloremque repellat, fuga explicabo quidem praesentium necessitatibus cupiditate excepturi, repudiandae fugiat quis, est laudantium? Unde minima aliquam accusantium tempora eius, ab fugit aliquid doloremque, optio animi, quas dolor? Sunt animi sequi, maxime saepe soluta ratione fuga fugit voluptates molestias doloribus repellendus!
+</p>
+</div>
+
+<div class="col-lg-6">
+<img src="/assets/mission-image.jpg.png" class="img-fluid">
+</div>
+</div>
+
+</div>
+
+
 </div>
 </div>
 </section>
@@ -236,15 +281,15 @@ of type
         <i class="bi bi-gear textstyle"></i>
 <p class="history-sub text-white">WHAT WE DO</p>
 </div>
-<h4 class="main-title">
+<h4 class="approachhero-title">
 Innovative factory and industry <br>
 <strong>solutions today</strong>
 </h4>
 
-<div class="row g-4 service-cards">
+<div class="row g-4 service-cards mt-4">
 <div class="col-md-6">
 <div class="service-card">
-<div class="icon"> <i class="bi bi-gear textstyle"></i></div>
+<div class="icon">   <i class="bi bi-building-gear icon"></i></div>
 <h5>Automation Solutions</h5>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, aspernatur.</p>
 </div>
@@ -252,7 +297,7 @@ Innovative factory and industry <br>
 
 <div class="col-md-6">
 <div class="service-card cardactive">
-<div class="icon"> <i class="bi bi-gear textstyle"></i></div>
+<div class="icon"> <i class="bi bi-building"></i></div>
 <h5>Quality Control</h5>
 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, illo!</p>
 </div>
@@ -260,7 +305,7 @@ Innovative factory and industry <br>
 
 <div class="col-md-6">
 <div class="service-card cardactive">
-<div class="icon"> <i class="bi bi-gear textstyle"></i></div>
+<div class="icon"> <i class="bi bi-box-seam"></i></div>
 <h5>Process Engineering</h5>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, mollitia!</p>
 </div>
@@ -268,7 +313,7 @@ Innovative factory and industry <br>
 
 <div class="col-md-6">
 <div class="service-card">
-<div class="icon"> <i class="bi bi-gear textstyle"></i></div>
+<div class="icon"> <i class="bi bi-diagram-3"></i></div>
 <h5>Product Development</h5>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, esse.</p>
 </div>
@@ -293,13 +338,13 @@ Let's make something great work together.
 
 <section class="feature-section py-5">
 <div class="container">
-    <div class="row mb-5 align-items-center">
+    <div class="row mb-5 align-items-center ">
         <div class="col-lg-6">
     <div class="d-flex gap-2">
         <i class="bi bi-gear textstyle"></i>
 <p class="history-sub"> OUR KEY FEATURE</p></div>
 
-<p class="history-title">
+<p class="approachhero-title">
 Core Strenghts in
 <strong>industrial innovation</strong>
 </p>
@@ -313,29 +358,29 @@ text ever since the 1500s, when an unknown printer took a galley
 </p>
 </div>
     </div>
-    <div class="row g-2">
+    <div class="row g-0 align-items-stretch">
 <div class="col-md-6">
-<div class="feature-box">
-<span class="mb-2"><i class="bi bi-gear fs-2 textstyle"></i></span>
+<div class="feature-box box-1 ">
+<span class=""><i class="bi bi-building-gear fs-2 textstyle"></i></span>
 <h6>Lorem ipsum simply dummy</h6>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis odio libero id repudiandae nihil eum quasi facere vitae perferendis. Consequatur minima voluptate possimus maiores dolorem, aperiam labore veritatis quis aspernatur!accusamus iusto libero illum asperiores nesciunt recusandae error ut cumque sequi architecto ipsum, nostrum facere laborum dignissimos eum voluptate sapiente pariatur.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  Animi, voluptatibus.Reiciendis odio libero id repudiandae nihil eum quasi facere vitae perferendis repellat praesentium ipsa harum id hic.  </p>
 
 </div>
 
 </div>
 <div class="col-md-6">
-<div class="feature-box">
-    <span class="mb-2"><i class="bi bi-gear fs-2 textstyle"></i></span>
+<div class="feature-box box-2">
+    <span class=""><i class="bi bi-box-seam fs-2 textstyle"></i></span>
 <h6>Lorem ipsum simply dummy</h6>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nobis sapiente ipsa deserunt. Quasi, sit ipsum. Doloremque, recusandae aut temporibus repellat praesentium ipsa harum id hic. Sed corporis repudiandae nulla?accusamus iusto libero illum asperiores nesciunt recusandae error ut cumque sequi architecto ipsum, nostrum facere laborum dignissimos eum voluptate sapiente pariatur.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, voluptas.Distinctio nobis sapiente ipsa deserunt. Quasi, sit ipsum. Doloremque, recusandae aut temporibus repellat praesentium ipsa harum id hic.</p>
 </div>
 </div>
 
 <div class="col-md-6">
-<div class="feature-box">
-    <span class="mb-2"><i class="bi bi-gear fs-2 textstyle"></i></span>
+<div class="feature-box box-3">
+    <span class=""><i class="bi bi-diagram-3 fs-2 textstyle"></i></span>
 <h6>Lorem ipsum simply dummy</h6>
-<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed, accusamus iusto libero illum asperiores nesciunt recusandae error ut cumque sequi architecto ipsum, nostrum facere laborum dignissimos eum voluptate sapiente pariatur.accusamus iusto libero illum asperiores nesciunt recusandae error ut cumque sequi architecto ipsum, nostrum facere laborum dignissimos eum voluptate sapiente pariatur.</p>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
 </div>
 </div>
 <div class="col-md-6 industry-image">
@@ -429,6 +474,10 @@ Core Strengths in <br>
 </section>
 
 <div id="footer"></div>
+<button id="scrollTopBtn"
+class="btn" data-aos="zoom-in">
+  <i class="bi bi-arrow-up"></i>
+</button>
 
 <script>
 fetch("navbar.html")
@@ -457,6 +506,27 @@ document.getElementById("testimonial").innerHTML = data;
 <script src="/script.js"></script>
 <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+<script>
+document.querySelectorAll(".mission-tabs .tab").forEach(tab => {
+
+tab.addEventListener("click", function(){
+
+document.querySelectorAll(".mission-tabs .tab")
+.forEach(t => t.classList.remove("active"));
+
+this.classList.add("active");
+
+let tabId = this.getAttribute("data-tab");
+
+document.querySelectorAll(".mission-tab-content")
+.forEach(content => content.classList.remove("active"));
+
+document.getElementById(tabId).classList.add("active");
+
+});
+
+});
+</script>
 
 </body>
 </html>

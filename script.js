@@ -17,4 +17,24 @@ scrollBtn.onclick = function () {
 };
 
 
+//mission tabs
+document.querySelectorAll(".mission-tabs .tab").forEach(tab => {
+
+tab.addEventListener("click", function(){
+
+document.querySelectorAll(".mission-tabs .tab")
+.forEach(t => t.classList.remove("active"));
+
+this.classList.add("active");
+
+let tabId = this.getAttribute("data-tab");
+
+document.querySelectorAll(".mission-tab-content")
+.forEach(content => content.classList.remove("active"));
+
+document.getElementById(tabId).classList.add("active");
+
+});
+
+});
 

@@ -533,7 +533,7 @@ top:0;
 left:0;
 width:100%;
 height:100%;
-background:rgba(0,0,0,0.55);
+background:rgba(0,0,0,0.75);
 z-index: 1;
 }
 
@@ -565,7 +565,7 @@ color:#ddd;
 }
 
 .mission-section{
-margin-top:-160px;
+margin-top:-170px;
 position: relative;
 z-index: 5;
 margin-bottom: 40px;
@@ -610,7 +610,20 @@ margin-bottom:25px;
 list-style:none;
 padding:0;
 }
+.mission-tab-content{
+display:none;
+}
+.tab i{
+width:33px;
+height:33px;
+}
 
+.tab.active i{
+color:#fff !important
+}
+.mission-tab-content.active{
+display:block;
+}
 .mission-list li{
 margin-bottom:12px;
 padding-left:25px;
@@ -645,7 +658,7 @@ font-weight:700;
 }
 
 .history-text{
-color:#777;
+color:#81848a;
 line-height:1.6;
 }
 
@@ -815,13 +828,34 @@ border:6px solid rgba(255,255,255,0.2);
 }
 
 .feature-box{
-background:#f7f7f7;
-padding: 13px;
-border-radius:10px;
-
+background: #ffffff;
+padding: 35px;
+border: 1px solid #ebebeb;
+height: 100%;
+}
+.feature-box h6{
+    margin-top: 14px;
+}
+.feature-box p{
+    margin-top: 14px;
+    color: #81848a;
+    text-align: justify;
 }
 .industry-image{
     height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.box-1{
+    border-top-left-radius: 40px;
+    border-right: none;
+}
+.box-2{
+    border-top-right-radius: 40px;
+}
+.box-3{
+    border-top: none;
+    border-bottom-left-radius: 40px;
 }
 .ourpartners{
     display: flex;
