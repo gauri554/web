@@ -38,3 +38,49 @@ document.getElementById(tabId).classList.add("active");
 
 });
 
+// Products filter
+
+function toggleproducts(el){
+
+let list = el.nextElementSibling;
+let arrow = el.querySelector("i");
+
+if(list.style.display === "none"){
+list.style.display = "block";
+arrow.classList.replace("bi-chevron-down","bi-chevron-up");
+}else{
+list.style.display = "none";
+arrow.classList.replace("bi-chevron-up","bi-chevron-down");
+}
+
+}
+
+function togglemore(el){
+
+let more = el.previousElementSibling;
+let arrow = el.querySelector("i");
+
+if(more.style.display === "none"){
+more.style.display = "block";
+arrow.classList.replace("bi-chevron-down","bi-chevron-up");
+}else{
+more.style.display = "none";
+arrow.classList.replace("bi-chevron-up","bi-chevron-down");
+}
+
+}
+
+function togglerating(el){
+
+let list = el.nextElementSibling;
+let arrow = el.querySelector("i");
+
+if(list.style.display === "none"){
+list.style.display = "block";
+arrow.classList.replace("bi-chevron-down","bi-chevron-up");
+}else{
+list.style.display = "none";
+arrow.classList.replace("bi-chevron-up","bi-chevron-down");
+}
+
+}

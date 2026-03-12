@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanical Industry Website</title>
+      <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <div id="navbar"></div>
+
+      <section class="hero-section text-white d-flex align-items-center">
+        <div class="container product-hero-content">
+            <p class="banner-title">Safety <strong>Products</strong></p>
+            <div class="breadcrumb-text">
+                <a href="index.html">Home</a>
+                <span class="dot"><i class="bi bi-dot"></i></span>
+                <span class="active">Products</span>
+            </div>
+            <h4>Industrial Safety Products</h4>
+            <p class="banner-text">We have established ourselves as an eminent manufacturer and supplier of Safety Wear & Devices. Available in varied sizes and specifications, the goggles, face shields and helmets we offer are widely appreciated for their attractive designs, perfect fit and resistance against heat & scratch. Our suits, face mask, shoes, ear defenders and gloves has collected lots of appreciation from the clients for their skin-friendliness, ability to provide maximum protection to the user and lightweight. Moreover, customer widely appreciate our safety & electrical locks and fire fighting double headed hydrant valve for their rustproof construction and easy usage.</p>
+        </div>
+    </section>
+
+    <section class="productlist">
+      <div class="container">
+<div class="row">
+
+<div class="col-lg-3 col-md-4 sidebar d-none d-md-block">
+<div class="search-box">
+    <i class="bi bi-search search-icon"></i>
+<input type="search"  class="form-control mb-3" placeholder="Search..." >
+</div>
+<div class="productfilter">
+<div class="d-flex justify-content-between align-items-center productfilter-header" onclick="toggleproducts(this)">
+<h6>Products</h6>
+ <i class="bi bi-chevron-up" id="productarrow"></i>
+</div>
+ <div id="productList">
+<label><input class="form-check-input" type="checkbox" checked> All Products</label><br>
+<label><input class="form-check-input" type="checkbox" > Aluminised Fire Proximity Suit</label><br>
+<label><input class="form-check-input" type="checkbox"> Fire Protection Products</label><br>
+<label><input class="form-check-input" type="checkbox"> Fire Blanket</label><br>
+<label><input class="form-check-input" type="checkbox"> Kevlar Fire Resistant Products</label>
+
+<div id="moreproducts" style="display: none;">
+<label><input class="form-check-input"  type="checkbox"> Kevlar Fire Resistant Products</label><br>
+<label><input class="form-check-input"  type="checkbox"> Fire Safety Gloves</label><br>
+<label><input class="form-check-input"  type="checkbox"> Heat Resistant Shoes</label><br>
+</div>
+
+<p class="view-more" onclick="togglemore(this)">View more <i class="bi bi-chevron-down" id="viewmore-productarrow"></i></p>
+</div>
+</div>
+
+<div class="ratingfilter">
+<div class="d-flex justify-content-between align-items-center ratingfilter-header" onclick="togglerating(this)">
+<h6>Rating</h6>
+<i class="bi bi-chevron-up" id="ratingarrow"></i>
+</div>
+<div id="ratinglist">
+<label><input class="form-check-input" type="checkbox"><span class="stars"><i class="bi bi-star-fill"></i>
+  <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star-fill"></i></span>5.0</label><br>
+<label><input class="form-check-input" type="checkbox" checked>
+<span class="stars"> <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star-fill"></i>
+ <i class="bi bi-star"></i></span>4.0 & up</label><br>
+<label><input class="form-check-input" type="checkbox"> <span class="stars"> <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star"></i>
+ <i class="bi bi-star"></i></span>3.0 & up</label><br>
+<label><input class="form-check-input" type="checkbox">
+<span class="stars"> <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star"></i>
+  <i class="bi bi-star"></i>
+ <i class="bi bi-star"></i></span>2.0 & up</label><br>
+<label><input class="form-check-input" type="checkbox">
+<span class="stars"> <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star"></i>
+  <i class="bi bi-star"></i>
+  <i class="bi bi-star"></i>
+ <i class="bi bi-star"></i></span>1.0 & up</label>
+</div>
+</div>
+<button class="search-btn">Search</button>
+
+</div>
+
+<div class="d-md-none mb-3">
+<button class="btn btn-orange w-100" data-bs-toggle="offcanvas" data-bs-target="#mobileFilter">
+<i class="bi bi-funnel"></i> Filter Products
+</button>
+</div>
+
+<div class="col-lg-9 col-md-8">
+<div class="row g-4">
+<div class="col-xl-3 col-lg-4 col-md-4 col-6 ">
+<div class="card productlist-card">
+    <div class="productlist-img">
+<img src="./assets/70d03446c916a1a3708d31f5a541fca86f7661e0.png" class="img-fluid">
+<div class="favorite-icon">
+<i class="bi bi-heart"></i>
+</div>
+    </div>
+<div class="card-body">
+<p>FR-Flame Retardant Safety Garment</p>
+<button class="btn btn-orange viewall-btn">View All</button>
+</div>
+</div>
+</div>
+
+<div class="col-xl-3 col-lg-4 col-md-4 col-6 ">
+<div class="card productlist-card">
+    <div class="productlist-img">
+<img src="./assets/70d03446c916a1a3708d31f5a541fca86f7661e0.png" class="img-fluid">
+<div class="favorite-icon">
+<i class="bi bi-heart"></i>
+</div>
+    </div>
+<div class="card-body">
+<p>FR-Flame Retardant Safety Garment</p>
+<button class="btn btn-orange viewall-btn">View All</button>
+</div>
+</div>
+</div>
+
+<div class="col-xl-3 col-lg-4 col-md-4 col-6 ">
+<div class="card productlist-card">
+    <div class="productlist-img">
+<img src="./assets/70d03446c916a1a3708d31f5a541fca86f7661e0.png" class="img-fluid">
+<div class="favorite-icon">
+<i class="bi bi-heart"></i>
+</div>
+    </div>
+<div class="card-body">
+<p>FR-Flame Retardant Safety Garment</p>
+<button class="btn btn-orange viewall-btn">View All</button>
+</div>
+</div>
+</div>
+
+<div class="col-xl-3 col-lg-4 col-md-4 col-6 ">
+<div class="card productlist-card">
+    <div class="productlist-img">
+<img src="./assets/70d03446c916a1a3708d31f5a541fca86f7661e0.png" class="img-fluid">
+<div class="favorite-icon">
+<i class="bi bi-heart"></i>
+</div>
+    </div>
+<div class="card-body">
+<p>FR-Flame Retardant Safety Garment</p>
+<button class="btn btn-orange viewall-btn">View All</button>
+</div>
+</div>
+</div>
+
+<div class="col-xl-3 col-lg-4 col-md-4 col-6 ">
+<div class="card productlist-card">
+    <div class="productlist-img">
+<img src="./assets/70d03446c916a1a3708d31f5a541fca86f7661e0.png" class="img-fluid">
+<div class="favorite-icon">
+<i class="bi bi-heart"></i>
+</div>
+    </div>
+<div class="card-body">
+<p>FR-Flame Retardant Safety Garment</p>
+<button class="btn btn-orange viewall-btn">View All</button>
+</div>
+</div>
+</div>
+
+<div class="col-xl-3 col-lg-4 col-md-4 col-6 ">
+<div class="card productlist-card">
+    <div class="productlist-img">
+<img src="./assets/70d03446c916a1a3708d31f5a541fca86f7661e0.png" class="img-fluid">
+<div class="favorite-icon">
+<i class="bi bi-heart"></i>
+</div>
+    </div>
+<div class="card-body">
+<p>FR-Flame Retardant Safety Garment</p>
+<button class="btn btn-orange viewall-btn">View All</button>
+</div>
+</div>
+</div>
+
+<div class="col-xl-3 col-lg-4 col-md-4 col-6 ">
+<div class="card productlist-card">
+    <div class="productlist-img">
+<img src="./assets/70d03446c916a1a3708d31f5a541fca86f7661e0.png" class="img-fluid">
+<div class="favorite-icon">
+<i class="bi bi-heart"></i>
+</div>
+    </div>
+<div class="card-body">
+<p>FR-Flame Retardant Safety Garment</p>
+<button class="btn btn-orange viewall-btn">View All</button>
+</div>
+</div>
+</div>
+
+<div class="col-xl-3 col-lg-4 col-md-4 col-6 ">
+<div class="card productlist-card">
+    <div class="productlist-img">
+<img src="./assets/70d03446c916a1a3708d31f5a541fca86f7661e0.png" class="img-fluid">
+<div class="favorite-icon">
+<i class="bi bi-heart"></i>
+</div>
+    </div>
+<div class="card-body">
+<p>FR-Flame Retardant Safety Garment</p>
+<button class="btn btn-orange viewall-btn">View All</button>
+</div>
+</div>
+</div>
+
+<div class="col-xl-3 col-lg-4 col-md-4 col-6 ">
+<div class="card productlist-card">
+    <div class="productlist-img">
+<img src="./assets/70d03446c916a1a3708d31f5a541fca86f7661e0.png" class="img-fluid">
+<div class="favorite-icon">
+<i class="bi bi-heart"></i>
+</div>
+    </div>
+<div class="card-body">
+<p>FR-Flame Retardant Safety Garment</p>
+<button class="btn btn-orange viewall-btn">View All</button>
+</div>
+</div>
+</div>
+
+<div class="col-xl-3 col-lg-4 col-md-4 col-6 ">
+<div class="card productlist-card">
+    <div class="productlist-img">
+<img src="./assets/70d03446c916a1a3708d31f5a541fca86f7661e0.png" class="img-fluid">
+<div class="favorite-icon">
+<i class="bi bi-heart"></i>
+</div>
+    </div>
+<div class="card-body">
+<p>FR-Flame Retardant Safety Garment</p>
+<button class="btn btn-orange viewall-btn">View All</button>
+</div>
+</div>
+</div>
+
+<div class="col-xl-3 col-lg-4 col-md-4 col-6 ">
+<div class="card productlist-card">
+    <div class="productlist-img">
+<img src="./assets/70d03446c916a1a3708d31f5a541fca86f7661e0.png" class="img-fluid">
+<div class="favorite-icon">
+<i class="bi bi-heart"></i>
+</div>
+    </div>
+<div class="card-body">
+<p>FR-Flame Retardant Safety Garment</p>
+<button class="btn btn-orange viewall-btn">View All</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+    </section>
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileFilter">
+<div class="offcanvas-header">
+<h5 class="offcanvas-title">Filters</h5>
+<button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+</div>
+<div class="offcanvas-body">
+<div class="sidebar">
+<div class="search-box">
+    <i class="bi bi-search search-icon"></i>
+<input type="search"  class="form-control mb-3" placeholder="Search..." >
+</div>
+<div class="productfilter">
+<div class="d-flex justify-content-between align-items-center productfilter-header" onclick="toggleproducts(this)">
+<h6>Products</h6>
+ <i class="bi bi-chevron-up" id="productarrow"></i>
+</div>
+ <div id="productList">
+<label><input class="form-check-input" type="checkbox" checked> All Products</label><br>
+<label><input class="form-check-input" type="checkbox" > Aluminised Fire Proximity Suit</label><br>
+<label><input class="form-check-input" type="checkbox"> Fire Protection Products</label><br>
+<label><input class="form-check-input" type="checkbox"> Fire Blanket</label><br>
+<label><input class="form-check-input" type="checkbox"> Kevlar Fire Resistant Products</label>
+
+<div id="moreproducts" style="display: none;">
+<label><input class="form-check-input"  type="checkbox"> Kevlar Fire Resistant Products</label><br>
+<label><input class="form-check-input"  type="checkbox"> Fire Safety Gloves</label><br>
+<label><input class="form-check-input"  type="checkbox"> Heat Resistant Shoes</label><br>
+</div>
+
+<p class="view-more" onclick="togglemore(this)">View more <i class="bi bi-chevron-down" id="viewmore-productarrow"></i></p>
+</div>
+</div>
+
+<div class="ratingfilter">
+<div class="d-flex justify-content-between align-items-center ratingfilter-header" onclick="togglerating(this)">
+<h6>Rating</h6>
+<i class="bi bi-chevron-up" id="ratingarrow"></i>
+</div>
+<div id="ratinglist">
+<label><input class="form-check-input" type="checkbox"><span class="stars"><i class="bi bi-star-fill"></i>
+  <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star-fill"></i></span>5.0</label><br>
+<label><input class="form-check-input" type="checkbox" checked>
+<span class="stars"> <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star-fill"></i>
+ <i class="bi bi-star"></i></span>4.0 & up</label><br>
+<label><input class="form-check-input" type="checkbox"> <span class="stars"> <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star"></i>
+ <i class="bi bi-star"></i></span>3.0 & up</label><br>
+<label><input class="form-check-input" type="checkbox">
+<span class="stars"> <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star"></i>
+  <i class="bi bi-star"></i>
+ <i class="bi bi-star"></i></span>2.0 & up</label><br>
+<label><input class="form-check-input" type="checkbox">
+<span class="stars"> <i class="bi bi-star-fill"></i>
+  <i class="bi bi-star"></i>
+  <i class="bi bi-star"></i>
+  <i class="bi bi-star"></i>
+ <i class="bi bi-star"></i></span>1.0 & up</label>
+</div>
+</div>
+<button class="search-btn">Search</button>
+</div>
+</div>
+</div>
+    <nav>
+<ul class="pagination justify-content-center">
+<li class="page-item">
+<a class="page-link"><i class="bi bi-chevron-left"></i></a>
+</li>
+<li class="page-item active"><a class="page-link">1</a></li>
+<li class="page-item"><a class="page-link">2</a></li>
+<li class="page-item"><a class="page-link">3</a></li>
+<li class="page-item"><a class="page-link">4</a></li>
+<li class="page-item"><a class="page-link">5</a></li>
+<li class="page-item disabled"><a class="page-link">...</a></li>
+<li class="page-item"><a class="page-link">21</a></li>
+<li class="page-item">
+<a class="page-link"><i class="bi bi-chevron-right"></i></a>
+</li>
+</ul>
+</nav>
+  <div id="footer"></div>
+<button id="scrollTopBtn"
+class="btn" data-aos="zoom-in">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+
+<script>
+fetch("navbar.html")
+.then(response => response.text())
+.then(data => {
+document.getElementById("navbar").innerHTML = data;
+});
+</script>
+
+<script>
+fetch("footer.html")
+.then(response => response.text())
+.then(data => {
+document.getElementById("footer").innerHTML = data;
+});
+</script>
+
+ <script src="/script.js"></script>
+<script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
