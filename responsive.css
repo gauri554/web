@@ -1,26 +1,24 @@
 @media(max-width:991px){
 .experience{
-position:absolute;
-top:20px;
-left:220px;
-display:flex;
-align-items:center;
-gap:10px;
-z-index:4;
+left: 220px !important;
 }
 .about-bottom{
     gap: 10px;
+}
+.left-content{
+    padding: 30px !important;
 }
 .image-side{
     padding: 0 60px;
 }
 .circle-badge{
-    left: 20px;
+    left: 0px !important;
 }
 .faqcontact-box{
     position: absolute;
       left: 20px !important;
     font-size: 10px !important;
+    gap: 15px !important;
 }
 .banner-text{
    display: none;
@@ -31,4 +29,43 @@ z-index:4;
     right: 0;
 }
 
+/**************** home page *******************/
+.nav-glass{
+    display: block;
+background: transparent;
+backdrop-filter: none;
+border: none;
+padding: 0;
+}
+.hero{
+    height: 60vh;
+}
+.hero-img{
+    height: 60vh;
+  
+}
+.nav-link{
+color:black!important;
+font-size:16px;
+}
+
+.nav-link.active{
+color:#ff9f1c !important;
+}
+footer{
+    text-align: center;
+}
+
+.quote{
+    padding: 80px 40px;
+}
+.faq{
+    padding: 50px 40px;
+}
+.faq-image{
+    width: 300px;
+    height: 300px;
+    margin-bottom: 15px;
+
+}
 }

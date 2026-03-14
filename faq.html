@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mechanical Industry Website</title>
+       <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/bootstrap/bootstrap-icons/bootstrap-icons.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <div id="navbar"></div>
+  <section class="hero-section text-white d-flex align-items-center">
+        <div class="container">
+            <p class="banner-title">Frequently asked <strong>questions</strong></p>
+            <div class="breadcrumb-text">
+                <a href="index.html">Home</a>
+                <span class="dot"><i class="bi bi-dot"></i></span>
+                <span class="active">FAQs</span>
+            </div>
+        </div>
+    </section>
+
+<section>
+    <div class="container py-5 mt-4 mb-4">
+        <div class="row">
+            <div class="col-lg-10 mx-auto">
+<div class="accordion" id="faq">
+<div class="accordion-item">
+<button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#f1">
+What industries do you serve?  
+</button>
+<div id="f1" class="accordion-collapse collapse show">
+<div class="accordion-body">Manufacturing and heavy industries.</div>
+</div>
+</div>
+
+<div class="accordion-item mt-3">
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f2">
+How do you ensure product quality?
+</button>
+<div id="f2" class="accordion-collapse collapse">
+<div class="accordion-body">Strict quality control and testing.</div>
+</div>
+</div>
+
+<div class="accordion-item mt-3">
+<button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f3">
+How do you ensure product quality?
+</button>
+<div id="f3" class="accordion-collapse collapse">
+<div class="accordion-body">Strict quality control and testing.</div>
+</div>
+</div>
+</div>
+</div>
+        </div>
+    </div>
+</section>
+
+     <div id="footer"></div>
+<button id="scrollTopBtn"
+class="btn" data-aos="zoom-in">
+  <i class="bi bi-arrow-up"></i>
+</button>
+
+<script>
+fetch("navbar.html")
+.then(response => response.text())
+.then(data => {
+document.getElementById("navbar").innerHTML = data;
+});
+</script>
+
+<script>
+fetch("footer.html")
+.then(response => response.text())
+.then(data => {
+document.getElementById("footer").innerHTML = data;
+});
+</script>
+
+  <script src="/script.js"></script>
+<script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
