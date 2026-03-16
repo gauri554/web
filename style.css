@@ -20,7 +20,7 @@ align-items:center;
 .hero{
 height:100vh;
 position:relative;
-overflow:hidden;
+
 }
 
 .hero-img{
@@ -68,6 +68,7 @@ padding:70px 0;
 
 .counter-box{
 background:#586467;
+height: 100%;
 padding:25px;
 text-align:center;
 border-radius:8px;
@@ -319,11 +320,10 @@ border: none;
 padding: 0;
 }
 .hero{
-    height: 60vh;
+  height: 60vh !important;
 }
 .hero-img{
-    height: 60vh;
-  
+  height: 60vh !important;
 }
 .nav-link{
 color:black!important;
@@ -343,11 +343,7 @@ footer{
 .faq{
     padding: 50px 40px;
 }
-.faq-image{
-    width: 300px;
-    height: 300px;
-    margin-bottom: 15px;
-}
+
 
 }
 
@@ -357,7 +353,8 @@ footer{
 .hero-section{
     min-height:400px;
 background:url(/assets/0c6ed1f284ad103f098347c986f9842aa4608b9f.jpg) center/cover no-repeat;
-background-position: contain;
+width: 100%;
+background-position: center;
 position:relative;
 }
 .product-hero-content{
@@ -606,7 +603,7 @@ color:#fff;
 }
 
 .mission-content{
-padding:50px;
+padding:30px;
 }
 
 .mission-text{
@@ -871,6 +868,7 @@ height: 100%;
 .ourpartners{
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 6px;
 }
 @media(max-width:991px){
@@ -1163,7 +1161,13 @@ color:#1a1a1a;
 padding:20px;
 height:100%;
 }
+.productlist-img img{
+transition: transform 0.4s ease;
+}
 
+.productlist-card:hover .productlist-img img{
+transform: scale(1.06);
+}
 .sidebar h6{
 color:#1a1a1a;
 margin-top:20px;
@@ -1305,7 +1309,7 @@ color:#fff;
 /****************** Welding Safety Products page ****************************/
 
 .weldingproductlist{
-    margin: 50px 20px;
+    margin: 50px 0px;
 }
 .weldingproductlist p{
     font-size: 14px;
@@ -1654,4 +1658,97 @@ margin-right:12px;
 }
 .career-card .card-body button{
     width: 100%;
+}
+
+/****************************** BLOG DETAILS PAGE *******************************/
+
+.blog-social-share{
+    margin-top: 60px;
+display:flex;
+flex-direction:column;
+z-index:10;
+box-shadow:2px 2px 6px rgba(0,0,0,0.08);
+}
+
+.blog-social-share a{
+width:40px;
+height:40px;
+display:flex;
+align-items:center;
+justify-content:center;
+margin-bottom:5px;
+}
+
+.blog-social-share a:nth-child(1){background:#3b5998;}
+.blog-social-share a:nth-child(2){background:#1da1f2;}
+.blog-social-share a:nth-child(3){background:#0077b5;}
+.blog-social-share a:nth-child(4){background:#bd081c;}
+.blog-social-share a:nth-child(5){background:#999;}
+.blog-social-share i{
+    color: #fff !important;
+}
+.blog-content{
+box-shadow:2px 2px 6px rgba(0,0,0,0.08);
+padding: 20px;
+}
+
+.blog-content p{
+font-size:14px;
+text-align: justify;
+line-height:1.7;
+color:#000;
+}
+.blog-sidebarbox{
+box-shadow:2px 2px 6px rgba(0,0,0,0.08);
+padding: 15px;
+
+padding-left: 20px;
+}
+
+.blog-sidebarbox h4{
+color:#2f4e85;
+margin-bottom:20px;
+}
+
+.sidebar-blogpost{
+margin-bottom:25px;
+}
+
+.blog-thumb{
+    width: 190px;
+height:100px;
+background:#cfcfcf;
+margin-bottom:10px;
+}
+
+.sidebar-blogpost p{
+font-size:16px;
+color:#001a57;
+}
+.btn-message{
+    background-color: #2b4886;
+    color: #ffffff;
+}
+.blogemail-box{
+background:#f2f5f8;
+padding: 4px;
+border-radius:8px;
+}
+
+.blogemail-icon{
+background:transparent;
+border:none;
+color:#262529;
+font-size:20px;
+}
+
+.blogemail-input{
+border:none;
+background:transparent;
+font-size:16px;
+}
+
+.blogemail-input:focus{
+box-shadow:none;
+background:transparent;
 }
