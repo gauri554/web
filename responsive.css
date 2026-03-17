@@ -69,11 +69,14 @@ background-position:center !important;
     font-size: 15px !important;
 }
 .breadcrumb-text{
-    font-size: 12px !important;
+    font-size: 10px !important;
 }
 .approach-hero{
  min-height: 300px !important;
  background-position: center !important;
+}
+.feature-section .feature-box{
+    padding: 15px;
 }
 
 }
@@ -99,6 +102,15 @@ background-position:center !important;
 }
 .team-section .history-title{
     font-size: 20px !important;
+}
+.product-detail-img{
+    height: 270px !important;
+}
+.breadcrumb-text .dot i{
+    font-size: 8px !important;
+}
+.hero-content{
+    left: 0 !important;
 }
 }
 @media(max-width:370px){

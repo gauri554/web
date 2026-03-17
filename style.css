@@ -6,8 +6,10 @@
 
 }
 html, body{
-    overflow-x: hidden;
+  overflow-x: hidden;
+    font-family: 'Manrope', sans-serif;
 }
+
 /*.hero{
 background:url('/hero.png') center/cover no-repeat;
 height:100vh;
@@ -44,7 +46,7 @@ z-index:1;
 .hero-content{
 position:absolute;
 top:50%;
-left: 5%;
+left: 7%;
 transform:translateY(-50%);
 z-index:2;
 color:white;
@@ -180,7 +182,7 @@ font-size:15px;
 footer{
 background:#13294b;
 color:white;
-padding:50px 0;
+padding:50px 0 7px 0;
 }
 .list-unstyled li{
 margin-bottom: 8px;
@@ -320,9 +322,11 @@ border: none;
 padding: 0;
 }
 .hero{
+    width: 100% !important;
   height: 60vh !important;
 }
 .hero-img{
+    width: 100% !important;
   height: 60vh !important;
 }
 .nav-link{
@@ -381,6 +385,9 @@ text-decoration:none;
 .breadcrumb-text .dot{
 color:#f5a623;
 margin:0 0px;
+}
+.breadcrumb-text .dot i{
+    font-size: 12px;
 }
 .breadcrumb-text .active{
 color:#f5a623;
@@ -870,6 +877,13 @@ height: 100%;
     flex-direction: row;
     align-items: center;
     gap: 6px;
+}
+.ourteam .staff-card p{
+    color: #81848a;
+    margin-top: 0;
+}
+.ourteam .staff-card h6{
+    color: #000;
 }
 @media(max-width:991px){
     .image-col{
@@ -1481,7 +1495,7 @@ font-weight: bold;
     left: -16px;
 }
 .product-next{
-    right: -16px;
+    right: -25px;
 }
 
 /***************************** CAREERS PAGE ********************************/
@@ -1668,6 +1682,7 @@ display:flex;
 flex-direction:column;
 z-index:10;
 box-shadow:2px 2px 6px rgba(0,0,0,0.08);
+
 }
 
 .blog-social-share a{
