@@ -71,17 +71,22 @@ background-position:center !important;
 .breadcrumb-text{
     font-size: 10px !important;
 }
-.approach-hero{
- min-height: 300px !important;
- background-position: center !important;
-}
+
 .feature-section .feature-box{
     padding: 15px;
 }
-
+.hero .hero-content h1{
+    font-size: 30px !important;
+}
+.hero .hero-content{
+    top: 60% !important;
+}
 }
 
 @media(max-width:540px){
+    .hero .hero-content h1{
+    font-size: 18px !important;
+}
 .faq-image{
     width: 300px;
     height: 300px;
