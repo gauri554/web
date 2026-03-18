@@ -138,11 +138,12 @@ background-position:center !important;
     width:160px !important;
    }
    .img-main{
-    width: 250px !important;
+    width: 260px !important;
     top: 80px !important;
+  
    }
    .experience{
-    left: 185px !important;
+    left: 190px !important;
     top: 10px !important;
    }
 }
@@ -153,53 +154,5 @@ background-position:center !important;
 }
 
 
-@media(max-width:991px){
-    .image-col{
-margin-bottom:120px !important;
-min-height:400px !important;
-}
 
-.img-top{
-left:20px !important;
-width:180px !important;
-}
 
-.img-main{
-left:80px !important;
-width:280px !important;
-}
-
-.content-col{
-padding-left:0 !important;
-text-align:center !important;
-}
-
-.about-bottom{
-justify-content:center !important;
-}
-
-.approach-title{
-font-size:32px !important;
-}
-
-.approach-text{
-margin-top:20px !important;
-}
-
-.approach-card{
-margin-top:40px !important;
-}
-
-.history-title{
-font-size:32px !important;
-}
-
-.company-title{
-margin-top:30px !important;
-}
-
-.timeline-card{
-margin-bottom:30px !important;
-
-}
-}
